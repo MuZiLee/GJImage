@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   
   s.frameworks   = ['UIKit', 'OpenGLES', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'AVFoundation']
 
-  s.dependency 'GPUImage', '0.1.4'
+  s.dependency 'GPUImage', '0.1.5'
 
 end
