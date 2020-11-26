@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'GPUImage' do |ss|
     ss.source_files = 'GPUImage/*.{h,m}', 'GPUImage/BaseClass/*.{h,m}', 'GPUImage/Filters/*.{h,m}'
-    ss.resource     = 'GPUImage/Resources/*.{png}',
+    ss.resource     = 'GPUImage/Resources/*.{png}'
   end
   s.subspec 'GJImageFilters' do |ss|
     ss.source_files = 'GJImageFilters/*.{h,m}', 'GJImageFilters/ARCSoft/**/*.{h,m}', 'GJImageFilters/ARScene/**/*.{h,m}'
