@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
     ss.source_files = 'GJImageFilters/*.{h,m}', 'GJImageFilters/ARCSoft/*.{h,m}', 'GJImageFilters/ARScene/*.{h,m}'
   end
 
+  s.resource  = 'GJImage/ARCSoft/lib/libarcsoft_spotlight.a' 
   s.resources = [
-    'libs' : 'GJImage/ARCSoft/lib/libarcsoft_spotlight.a', 
     'Resources' : 'GPUImage/Resources/*.{png}'
   ]
 
