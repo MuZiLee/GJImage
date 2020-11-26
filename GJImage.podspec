@@ -7,14 +7,13 @@ Pod::Spec.new do |s|
   s.author   = { 'Brad Larson' => 'admin@sanshengit.com' }
   s.source   = { :git => 'https://github.com/MuZiLee/GJImage.git', :tag => "#{s.version}" }
   
-  s.source_files = '/**/*.{h,m}'
-  s.resources = '/*.png'
+  s.source_files = 'GJImage/*.{h,m}', 'GJImage/Filters/**/*.{h,m}', 'GJImage/Outputs/*.{h,m}', 'GJImage/Pipeline/*.{h,m}', 'GJImage/Sources/*.{h,m}', 'GJImageFilters/*.{h,m}'
   s.requires_arc = true
   s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES' }
   
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.ios.frameworks   = ['OpenGLES', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'AVFoundation']
-  s.osx.exclude_files = 'GJImageFilters',
-                        'GPUImageFilterPipeline'
-  s.osx.xcconfig = { 'GCC_WARN_ABOUT_RETURN_TYPE' => 'YES', "ENABLE_BITCODE" => "NO" }
+  s.osx.exclude_files = 'GJImageFilters'
+
+
 end
