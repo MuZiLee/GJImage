@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'GJImage'
-  s.version  = '0.1.0'
+  s.version  = '0.1.1'
   s.license  = 'BSD'
   s.summary  = 'An open source iOS framework for GPU-based image and video processing.'
   s.homepage = 'https://github.com/MuZiLee/GJImage'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES' }
   
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
   s.ios.frameworks   = ['OpenGLES', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'AVFoundation']
   s.osx.exclude_files = 'GJImageFilters'
 
