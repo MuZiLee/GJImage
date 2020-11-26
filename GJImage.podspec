@@ -13,10 +13,12 @@ Pod::Spec.new do |s|
 
   s.subspec 'GPUImage' do |ss|
     ss.source_files = 'GPUImage/GPUImage/**/*.{h,m}'
+    ss.public_header_files = 'GPUImage/GPUImage/**/*.h'
     # ss.resource     =  ['GPUImage/Resources/*']
   end
   s.subspec 'GJImage' do |ss|
     ss.source_files = 'GPUImage/GJImageFilters/**/*.{h,m}'
+    ss.public_header_files = 'GPUImage/GJImageFilters/**/*.h'
     # ss.resource     = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
     ss.vendored_libraries = 'GPUImage/GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
   end
