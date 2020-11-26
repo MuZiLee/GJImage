@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'GJImage/*.{h,m}', 'GJImage/Filters/**/*.{h,m}', 'GJImage/Outputs/*.{h,m}', 'GJImage/Pipeline/*.{h,m}', 'GJImage/Sources/*.{h,m}', 'GJImageFilters/*.{h,m}'
+  s.source_files = 'GJImage/*.{h,m}', 'GJImageFilters/*.{h,m}'
   s.resource = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
-  
+
   s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES', 'OTHER_LDFLAGS' => '-ObjC', 'ENABLE_BITCODE' => 'NO' }
   s.requires_arc = true
   s.static_framework = true
