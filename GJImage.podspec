@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
-  s.name     = 'GJUImage'
-  s.version  = '0.1'
+  s.name     = 'GJImage'
+  s.version  = '0.1.0'
   s.license  = 'BSD'
   s.summary  = 'An open source iOS framework for GPU-based image and video processing.'
-  s.homepage = 'https://github.com/MuZiLee/GJUImage'
+  s.homepage = 'https://github.com/MuZiLee/GJImage'
   s.author   = { 'Brad Larson' => 'admin@sanshengit.com' }
-  s.source   = { :git => 'https://github.com/MuZiLee/GJUImage.git', :tag => "#{s.version}" }
+  s.source   = { :git => 'https://github.com/MuZiLee/GJImage.git', :tag => "#{s.version}" }
   
   s.source_files = '/**/*.{h,m}'
   s.resources = '/*.png'
