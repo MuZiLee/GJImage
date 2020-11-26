@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   
   s.source_files = 'GJImage/*.{h,m}', 'GJImage/Filters/**/*.{h,m}', 'GJImage/Outputs/*.{h,m}', 'GJImage/Pipeline/*.{h,m}', 'GJImage/Sources/*.{h,m}', 'GJImageFilters/*.{h,m}'
   s.requires_arc = true
-  s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES' }
+  s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES', 'OTHER_LDFLAGS' => '-ObjC', 'ENABLE_BITCODE' => 'NO' }
   
   s.ios.deployment_target = '9.0'
   s.ios.frameworks   = ['OpenGLES', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'AVFoundation']
