@@ -16,10 +16,8 @@ Pod::Spec.new do |s|
   end
   s.subspec 'GJImageFilters' do |ss|
     ss.source_files = 'GJImageFilters/*.{h,m}', 'GJImageFilters/ARCSoft/*.{h,m}', 'GJImageFilters/ARScene/*.{h,m}'
-    ss.resource  = 'GPUImage/Resources/*.{png}'
+    ss.resource  = 'GPUImage/Resources/*.{png}', 'GJImage/ARCSoft/lib/libarcsoft_spotlight.a'
   end
-
-  s.resource  = 'GJImage/ARCSoft/lib/libarcsoft_spotlight.a'
   
 
   s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES', 'OTHER_LDFLAGS' => '-ObjC', 'ENABLE_BITCODE' => 'NO' }
