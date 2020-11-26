@@ -13,12 +13,12 @@ Pod::Spec.new do |s|
 
   s.subspec 'GPUImage' do |ss|
     ss.source_files = 'GPUImage/*.{h,m}', 'GPUImage/BaseClass/*.{h,m}', 'GPUImage/Filters/*.{h,m}'
-    ss.resource     = 'GPUImage/Resources/*.{png}'
+    ss.resource     =  ['GPUImage/Resources/*']
   end
   s.subspec 'GJImageFilters' do |ss|
     ss.source_files = 'GJImageFilters/*.{h,m}', 'GJImageFilters/ARCSoft/**/*.{h,m}', 'GJImageFilters/ARScene/**/*.{h,m}'
-    ss.resource     = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
-    
+    # ss.resource     = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
+    ss.vendored_libraries = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
   end
   
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.static_framework = true
   
-  s.frameworks   = ['UIKit', 'OpenGLES', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'AVFoundation']
+  s.frameworks   = ['UIKit', 'OpenGLES', 'CoreMedia', 'CoreVideo', 'QuartzCore', 'AVFoundation', 'libc++']
 
   # s.dependency 'GPUImage', '0.1.5'
 
