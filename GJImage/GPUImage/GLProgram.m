@@ -5,6 +5,7 @@
 
 #import "GLProgram.h"
 #import "GPUImageOutput.h"
+#import <OpenGLES/ES2/glext.h>
 // START:typedefs
 #pragma mark Function Pointer Definitions
 typedef void (*GLInfoFunction)(GLuint program, GLenum pname, GLint* params);

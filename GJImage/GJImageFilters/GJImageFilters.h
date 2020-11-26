@@ -20,8 +20,7 @@
 #import "GJImageUICapture.h"
 #import "GJImageYUVDataOutput.h"
 
-//#import "ARCSoft/ARCSoftDefine.h"
-#import "ARCSoftDefine.h"
+#import "ARCSoft/ARCSoftDefine.h"
 
 
 #endif

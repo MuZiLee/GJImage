@@ -1,6 +1,7 @@
 #import "GPUImageContext.h"
 #include "GPUImageOutput.h"
 #import <OpenGLES/EAGLDrawable.h>
+#import <OpenGLES/EAGL.h>
 #import <AVFoundation/AVFoundation.h>
 
 #define MAXSHADERPROGRAMSALLOWEDINCACHE 40

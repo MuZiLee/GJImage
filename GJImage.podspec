@@ -12,13 +12,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.subspec 'GPUImage' do |ss|
-    ss.source_files = 'GPUImage/*.{h,m}', 'GPUImage/BaseClass/*.{h,m}', 'GPUImage/Filters/*.{h,m}'
-    ss.resource     =  ['GPUImage/Resources/*']
+    ss.source_files = 'GPUImage/GPUImage/**/*.{h,m}'
+    # ss.resource     =  ['GPUImage/Resources/*']
   end
-  s.subspec 'GJImageFilters' do |ss|
-    ss.source_files = 'GJImageFilters/*.{h,m}', 'GJImageFilters/ARCSoft/**/*.{h,m}', 'GJImageFilters/ARScene/**/*.{h,m}'
+  s.subspec 'GJImage' do |ss|
+    ss.source_files = 'GPUImage/GJImageFilters/**/*.{h,m}'
     # ss.resource     = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
-    ss.vendored_libraries = 'GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
+    ss.vendored_libraries = 'GPUImage/GJImageFilters/ARCSoft/lib/libarcsoft_spotlight.a'
   end
   
 
